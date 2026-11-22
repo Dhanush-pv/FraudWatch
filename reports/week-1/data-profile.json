@@ -1,0 +1,121 @@
+{
+  "dataset": "transactions.csv",
+  "row_count": 1000,
+  "column_count": 19,
+  "columns": {
+    "event_id": {
+      "null_count": 0,
+      "distinct_count": 1000
+    },
+    "transaction_id": {
+      "null_count": 0,
+      "distinct_count": 1000
+    },
+    "event_version": {
+      "null_count": 0,
+      "distinct_count": 1
+    },
+    "event_type": {
+      "null_count": 0,
+      "distinct_count": 1
+    },
+    "event_timestamp": {
+      "null_count": 0,
+      "distinct_count": 1000
+    },
+    "transaction_timestamp": {
+      "null_count": 0,
+      "distinct_count": 1000
+    },
+    "customer_id": {
+      "null_count": 0,
+      "distinct_count": 100
+    },
+    "card_id": {
+      "null_count": 0,
+      "distinct_count": 293
+    },
+    "merchant_id": {
+      "null_count": 0,
+      "distinct_count": 30
+    },
+    "merchant_category": {
+      "null_count": 0,
+      "distinct_count": 6,
+      "top_values": {
+        "GAMING": 179,
+        "GROCERY": 174,
+        "TRAVEL": 174,
+        "ELECTRONICS": 167,
+        "FUEL": 158,
+        "FASHION": 148
+      }
+    },
+    "merchant_country": {
+      "null_count": 0,
+      "distinct_count": 8,
+      "top_values": {
+        "GB": 149,
+        "NL": 141,
+        "FR": 123,
+        "US": 121,
+        "PL": 121,
+        "TR": 118,
+        "ES": 116,
+        "DE": 111
+      }
+    },
+    "device_id": {
+      "null_count": 0,
+      "distinct_count": 40
+    },
+    "ip_address": {
+      "null_count": 0,
+      "distinct_count": 1000
+    },
+    "channel": {
+      "null_count": 0,
+      "distinct_count": 4,
+      "top_values": {
+        "MOBILE": 261,
+        "POS": 256,
+        "ATM": 254,
+        "ECOMMERCE": 229
+      }
+    },
+    "amount": {
+      "null_count": 0,
+      "distinct_count": 935,
+      "min": 0.65,
+      "median": 26.905,
+      "p95": 189.51399999999984,
+      "max": 2471.66
+    },
+    "currency": {
+      "null_count": 0,
+      "distinct_count": 1,
+      "top_values": {
+        "EUR": 1000
+      }
+    },
+    "status": {
+      "null_count": 0,
+      "distinct_count": 3,
+      "top_values": {
+        "AUTHORIZED": 885,
+        "DECLINED": 84,
+        "REVERSED": 31
+      }
+    },
+    "is_fraud": {
+      "null_count": 0,
+      "distinct_count": 2
+    },
+    "source_system": {
+      "null_count": 0,
+      "distinct_count": 1
+    }
+  },
+  "duplicate_transaction_ids": 0,
+  "fraud_label_rate": 0.029
+}

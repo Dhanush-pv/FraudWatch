@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fraudwatch-plus"
+version = "0.1.0"
+description = "Streaming fraud detection and fraud-ring analytics platform"
+authors = [{name = "Dhanush"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.7,<3", "PyYAML>=6,<7", "pandas>=2.2,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "pytest-cov>=5,<7", "ruff>=0.6,<1"]
+database = ["psycopg[binary]>=3.2,<4", "python-dotenv>=1,<2"]
+streaming = ["confluent-kafka>=2.5,<3"]
+analytics = ["scikit-learn>=1.5,<2", "pyarrow>=17,<20"]
+
+[project.scripts]
+fraudwatch = "fraudwatch.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fraudwatch*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
